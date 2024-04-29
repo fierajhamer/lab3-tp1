@@ -2,14 +2,32 @@
     margin: 0;
     padding: 0;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: #f8f9fa
 }
 
+body {
+    width: 100vw;
+    height: fit-content;
+    background-image: linear-gradient(335deg,
+            hsl(212deg 72% 26%) 0%,
+            hsl(212deg 72% 25%) 21%,
+            hsl(212deg 72% 24%) 30%,
+            hsl(212deg 72% 23%) 39%,
+            hsl(212deg 72% 22%) 46%,
+            hsl(213deg 72% 20%) 54%,
+            hsl(213deg 72% 19%) 61%,
+            hsl(213deg 72% 18%) 69%,
+            hsl(213deg 72% 17%) 79%,
+            hsl(213deg 72% 16%) 100%);
+}
+
+
 nav {
-    height: 10vh;
+    height: 6vh;
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: solid 2px #000000;
+    border-bottom: solid 1px #f8f9fa;
 }
 
 a {
@@ -27,17 +45,23 @@ a {
 
 .github-container:hover,
 .contact-container:hover {
-    text-decoration: underline;
+    filter: drop-shadow(0px 0px 1px #f8f9fa);
 }
+
 
 .github-link,
 .contact-link {
-    margin: 0px 10px 0px 0px;
+    margin: 0px 5px 0px 0px;
 }
 
-.github-logo,
 .contact-logo {
-    height: 5vh;
+    height: 3vh;
+    margin: 5px 0px 0px 0px;
+}
+
+.github-logo {
+    height: 3vh;
+    margin: 2px 0px 0px 0px;
 }
 
 .body-container {
@@ -50,12 +74,11 @@ a {
 
 .banner {
     width: 80vw;
-    height: 60vh;
-    background-color: green;
+    height: 80vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: larger;
+    font-size: 3vh;
 }
 
 .banner-message {
@@ -65,18 +88,83 @@ a {
 }
 
 .banner-message img {
-    height: 5vh;
-    margin: 0px 0px 0px 10px;
+    height: 6vh;
+    margin: 0px 0px 0px 20px;
 }
 
-.banner-2 {
+.emojis-container {
+    width: fit-content;
+    height: fit-content;
+    margin: 0px 0px 50px;
+}
+
+.emoji1:hover {
+    opacity: 0;
+}
+
+.emojis-container img {
+    position: absolute;
+}
+
+.presentation {
     width: 80vw;
-    height: 60vh;
-    background-color: aqua;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-text {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5vw;
+    font-weight: 600;
+    padding: 0vw 0vw 0vw 8vw;
+}
+
+.presentation-image {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me {
+    height: 90vh;
+    width: 80vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me-container {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-me h2 {
+    font-size: 6vh;
+    margin: 0vh 0vh 5vh 0vh;
+}
+
+.about-me li {
+    list-style-type: none;
+    font-weight: 550;
+    font-size: 2.7vh;
+    margin: 0vh 0vh 2vh 0;
 }
 
 footer {
     height: 20vh;
     width: 100vw;
-    background-color: yellow;
+    outline: #f8f9fa solid 1px;
 }
