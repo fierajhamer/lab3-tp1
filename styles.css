@@ -100,6 +100,7 @@ a {
 
 .emoji1:hover {
     opacity: 0;
+    cursor: crosshair;
 }
 
 .emojis-container img {
@@ -153,14 +154,14 @@ a {
 
 .about-me h2 {
     font-size: 6vh;
-    margin: 0vh 0vh 5vh 0vh;
+    margin: 0vh 0vh 6vh 0vh;
 }
 
 .about-me li {
     list-style-type: none;
     font-weight: 550;
     font-size: 2.7vh;
-    margin: 0vh 0vh 2vh 0;
+    margin: 0vh 0vh 3vh 5vh;
 }
 
 footer {
