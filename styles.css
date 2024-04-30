@@ -8,17 +8,15 @@
 body {
     width: 100vw;
     height: fit-content;
-    background-image: linear-gradient(335deg,
-            hsl(212deg 72% 26%) 0%,
-            hsl(212deg 72% 25%) 21%,
-            hsl(212deg 72% 24%) 30%,
-            hsl(212deg 72% 23%) 39%,
-            hsl(212deg 72% 22%) 46%,
-            hsl(213deg 72% 20%) 54%,
-            hsl(213deg 72% 19%) 61%,
-            hsl(213deg 72% 18%) 69%,
-            hsl(213deg 72% 17%) 79%,
-            hsl(213deg 72% 16%) 100%);
+    background-color: rgb(131, 0, 0);
+    background-image:
+        radial-gradient(at 40% 20%, rgb(136, 98, 66) 0px, transparent 50%),
+        radial-gradient(at 80% 0%, rgb(20, 118, 136) 0px, transparent 50%),
+        radial-gradient(at 0% 50%, rgb(134, 113, 115) 0px, transparent 50%),
+        radial-gradient(at 80% 50%, rgb(136, 72, 93) 0px, transparent 50%),
+        radial-gradient(at 0% 100%, rgb(146, 103, 79) 0px, transparent 50%),
+        radial-gradient(at 80% 100%, rgb(56, 53, 134) 0px, transparent 50%),
+        radial-gradient(at 0% 0%, rgb(136, 70, 89) 0px, transparent 50%);
 }
 
 
@@ -27,7 +25,6 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    border-bottom: solid 1px #f8f9fa;
 }
 
 a {
@@ -45,7 +42,7 @@ a {
 
 .github-container:hover,
 .contact-container:hover {
-    filter: drop-shadow(0px 0px 1px #f8f9fa);
+    filter: drop-shadow(0px 0px 5px #000000);
 }
 
 
@@ -85,6 +82,15 @@ a {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.banner-message h1 {
+    transition: filter 0.3s ease-out;
+}
+
+.banner-message h1:hover {
+    filter: drop-shadow(0px 0px 20px #000000);
+    cursor: default;
 }
 
 .banner-message img {
@@ -153,19 +159,81 @@ a {
 }
 
 .about-me h2 {
-    font-size: 6vh;
+    font-size: 5vh;
     margin: 0vh 0vh 6vh 0vh;
 }
 
 .about-me li {
     list-style-type: none;
     font-weight: 550;
-    font-size: 2.7vh;
-    margin: 0vh 0vh 3vh 5vh;
+    font-size: 2.5vh;
+    margin: 0vh 0vh 4vh 5vh;
+}
+
+.albums {
+    width: 80vw;
+    height: 90vh;
+    display: flex;
+    font-size: 3vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.albums h2 {
+    margin: 0% 0% 3% 0%;
+}
+
+.albums-container {
+    height: 60%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.album1,
+.album2,
+.album3 {
+    height: 100%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.album1 a, .album2 a, .album3 a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.album-image {
+    width: 60%;
+    border-radius: 6px;
+    transition: filter 0.2s ease-out;
+}
+
+.album-image:hover {
+    filter: drop-shadow(0px 0px 10px #000000);
+}
+
+.album-title {
+    margin: 15px 0px 5px 0px;
+    font-size: x-large;
+}
+
+.album-artist {
+    font-size: x-large;
+    font-weight: 600;
 }
 
 footer {
     height: 20vh;
     width: 100vw;
-    outline: #f8f9fa solid 1px;
+    /**/
+    background-color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
