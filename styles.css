@@ -95,9 +95,16 @@ a {
     padding: 0vw 0vw 0vw 8vw;
 }
 
-.presentation-image {
-    width: 40%;
+.presentation-image-container {
     height: 100%;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.presentation-image {
+    width: 80%;
     display: flex;
     justify-content: center;
     align-items: center;
