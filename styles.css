@@ -381,11 +381,13 @@ footer {
         width: 100%;
     }
 
-    .footer-top-left, .footer-top-right {
+    .footer-top-left,
+    .footer-top-right {
         width: 30%;
     }
 
-    .footer-top-left hr, .footer-top-right hr {
+    .footer-top-left hr,
+    .footer-top-right hr {
         color: #6c757d;
     }
 
@@ -397,7 +399,12 @@ footer {
 
 /* Para pantallas móviles */
 @media (max-width: 500px) {
-    .banner, .presentation, .about-me, .albums, .css-html {
+
+    .banner,
+    .presentation,
+    .about-me,
+    .albums,
+    .css-html {
         width: 100%;
     }
 
@@ -426,7 +433,8 @@ footer {
         flex-direction: column;
     }
 
-    .presentation-text, .presentation-image-container {
+    .presentation-text,
+    .presentation-image-container {
         padding: 0;
         width: 80%;
     }
@@ -466,7 +474,9 @@ footer {
         flex-direction: column;
     }
 
-    .album1, .album2, .album3 {
+    .album1,
+    .album2,
+    .album3 {
         width: 75%;
     }
 
@@ -482,15 +492,18 @@ footer {
         font-size: 4vh;
     }
 
-    .css-logo, .html-logo {
+    .css-logo,
+    .html-logo {
         width: 50%;
     }
 
-    .footer-top-left, .footer-top-right {
+    .footer-top-left,
+    .footer-top-right {
         width: 10%;
     }
 
-    .footer-top-left hr, .footer-top-right hr {
+    .footer-top-left hr,
+    .footer-top-right hr {
         color: #6c757d;
     }
 
