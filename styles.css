@@ -360,6 +360,7 @@ footer {
     display: none;
 }
 
+/* Para pantallas menos a 1020px */
 @media (max-width: 1020px) {
     .emojis-container {
         width: fit-content;
@@ -393,10 +394,16 @@ footer {
 
 }
 
+/* Para pantallas móviles */
 @media (max-width: 500px) {
     .banner, .presentation, .about-me, .albums, .css-html {
         width: 100%;
     }
+
+    .banner {
+        height: 100vh;
+    }
+
     .banner-message {
         width: 100%;
         flex-direction: column;
@@ -410,4 +417,85 @@ footer {
     .emojis-container {
         margin: 0% 22% 0% 0%;
     }
+
+    .presentation {
+        width: 100%;
+        height: 80vh;
+        margin: 0vh 0vh 10vh 0vh;
+        flex-direction: column;
+    }
+
+    .presentation-text, .presentation-image-container {
+        padding: 0;
+        width: 80%;
+    }
+
+    .presentation-text p {
+        font-size: 2.5vh;
+    }
+
+    .about-me-container {
+        width: 90%;
+    }
+
+    .about-me-container li {
+        margin: 0vh 3vh 4vh 3vh;
+        font-size: 2vh;
+    }
+
+    .about-me-container h2 {
+        font-size: 3.5vh;
+    }
+
+    .albums {
+        height: 180vh;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .albums h2 {
+        font-size: 3vh;
+        margin: 0vh 0vh 5vh 0vh;
+    }
+
+    .albums-container {
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .album1, .album2, .album3 {
+        width: 75%;
+    }
+
+    .css-html {
+        height: 70vh;
+        margin: 0vh 0vh 15vh 0vh;
+    }
+
+    .css-html h2 {
+        text-align: center;
+        margin: 0;
+        width: 80%;
+        font-size: 4vh;
+    }
+
+    .css-logo, .html-logo {
+        width: 50%;
+    }
+
+    .footer-top-left, .footer-top-right {
+        width: 10%;
+    }
+
+    .footer-top-left hr, .footer-top-right hr {
+        color: #6c757d;
+    }
+
+    .footer-top-mid {
+        width: 75%;
+        justify-content: space-evenly;
+    }
+
 }
