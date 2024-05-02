@@ -355,3 +355,59 @@ footer {
     color: #6c757d;
     font-size: small;
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+@media (max-width: 1020px) {
+    .emojis-container {
+        width: fit-content;
+        height: fit-content;
+        margin: 0px 0px 40px 0px;
+    }
+
+    .presentation {
+        width: 100vw;
+    }
+
+    .presentation p {
+        font-size: 3vh;
+    }
+
+    .about-me {
+        width: 100%;
+    }
+
+    .footer-top-left, .footer-top-right {
+        width: 30%;
+    }
+
+    .footer-top-left hr, .footer-top-right hr {
+        color: #6c757d;
+    }
+
+    .footer-top-mid {
+        width: 25%;
+    }
+
+}
+
+@media (max-width: 500px) {
+    .banner, .presentation, .about-me, .albums, .css-html {
+        width: 100%;
+    }
+    .banner-message {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .banner-message h1 {
+        font-size: 5vh;
+        margin: 0% 0% 10% 0%;
+    }
+
+    .emojis-container {
+        margin: 0% 22% 0% 0%;
+    }
+}
