@@ -312,6 +312,7 @@ footer {
 .footer-top-right hr {
     width: 100%;
     color: #6c757d;
+    border: #6c757d solid 1px;
 }
 
 .footer-top-mid {
